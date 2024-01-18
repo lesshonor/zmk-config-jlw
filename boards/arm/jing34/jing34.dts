@@ -117,7 +117,7 @@ jing34_spi: &spi0 {
         label = "4HC595";
         #gpio-cells = <2>;
         ngpios = <16>;
-    }
+    };
 };
 
 &adc {
