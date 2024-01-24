@@ -102,7 +102,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │      │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V             &kp K      &kp H      &as COMMA  &as DOT    &as FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤      ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 3 TAB  &mt LSHIFT BSPC   &lt 1 SPACE &lt 2 RET
+                                            &lt 3 TAB  &ht LSHIFT BSPC   &lt 1 SPACE &lt 2 RET
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
             >;
         };
