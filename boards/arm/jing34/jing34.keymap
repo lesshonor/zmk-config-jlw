@@ -27,7 +27,7 @@
             quick-tap-ms = <220>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-        }
+        };
         as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
