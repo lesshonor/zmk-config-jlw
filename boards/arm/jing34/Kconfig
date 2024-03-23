@@ -10,4 +10,4 @@ config BOARD_NRFMICRO_CHARGER
     depends on (BOARD_JING34)
 
 # Turn on logging, and set ZMK logging to debug output
-CONFIG_ZMK_USB_LOGGING=n
+# CONFIG_ZMK_USB_LOGGING=n
