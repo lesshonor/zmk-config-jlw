@@ -108,7 +108,7 @@
                                             &lt 3 TAB  &mt LSHIFT BSPC   &lt 1 SPACE &lt 2 RET
         //                                 ╰──────────┴──────────╯      ╰──────────┴──────────╯
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  #encoder
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         num_layer {
@@ -126,7 +126,7 @@
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  #encoder
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
@@ -144,7 +144,7 @@
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  #encoder
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         nav_layer {
@@ -162,7 +162,7 @@
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  #encoder
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
     };
