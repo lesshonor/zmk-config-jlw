@@ -83,7 +83,7 @@
         wakeup-source;
         kscan = <&kscan>;
         soft_off {
-            column = <5>;
+            column = <10>;
             row = <0>;
             bindings = <&hw_soft_off>;
         };
