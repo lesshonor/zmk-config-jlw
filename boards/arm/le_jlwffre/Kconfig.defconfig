@@ -31,4 +31,7 @@ config I2C
 config MAX17048
 	default y
 
+CONFIG_ZMK_PM_SOFT_OFF
+	default y
+
 endif # BOARD_LE_JLWFFRE
