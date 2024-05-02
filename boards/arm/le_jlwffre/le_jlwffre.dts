@@ -68,6 +68,16 @@
         status = "disabled";
     };
 
+//	leds {
+//		compatible = "gpio-leds";
+//		blue_led: led_0 {
+//			gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
+//		};
+//		green_led: led_1 {
+//			gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
+//		};
+//	};
+
 	/* begin soft off feature */
 
 	behaviors {
@@ -92,7 +102,7 @@
 	wakeup_source: wakeup_source {
         compatible = "zmk,gpio-key-wakeup-trigger";
 
-        trigger = <&gpio0  7 GPIO_ACTIVE_HIGH>;
+        trigger = <&on_off_key>;
         wakeup-source;
     };
 
