@@ -109,7 +109,7 @@
 	wakeup_source: wakeup_source {
         compatible = "zmk,gpio-key-wakeup-trigger";
 
-        trigger = <&on_off_key>;
+        trigger = <&wakeup_key>;
         wakeup-source;
     };
 
