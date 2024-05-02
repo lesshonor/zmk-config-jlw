@@ -44,6 +44,7 @@
 			, <&gpio0  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>		/* soft off AND gate */
 			;
 		col-gpios
 			= <&gpio0  9 GPIO_ACTIVE_HIGH>
@@ -56,7 +57,6 @@
 			, <&gpio0 29 GPIO_ACTIVE_HIGH>
 			, <&gpio0 31 GPIO_ACTIVE_HIGH>
 			, <&gpio0 30 GPIO_ACTIVE_HIGH>
-			, <&gpio0  7 GPIO_ACTIVE_HIGH>		/* soft off AND gate */
 			;
 	};
 
@@ -67,6 +67,11 @@
         steps = <80>;
         status = "disabled";
     };
+
+	aliases {
+		led0 = &blue_led;
+		led1 = $green_led;
+	};
 
 //	leds {
 //		compatible = "gpio-leds";
@@ -79,6 +84,13 @@
 //	};
 
 	/* begin soft off feature */
+
+	keys {
+		compatible = "gpio-keys";
+		wakeup_key: wakeup_key {
+			gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+		};
+	};
 
 	behaviors {
         hw_soft_off: hw_soft_off {
@@ -93,8 +105,8 @@
         wakeup-source;
         kscan = <&kscan>;
         soft_off {
-            column = <10>;
-            row = <0>;
+            column = <0>;
+            row = <4>;
             bindings = <&hw_soft_off>;
         };
     };
