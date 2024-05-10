@@ -100,7 +100,7 @@
         wakeup-source;
         kscan = <&kscan>;
         soft_off {
-            column = <0>;
+            column = <5>;
             row = <4>;
             bindings = <&hw_soft_off>;
         };
@@ -111,6 +111,9 @@
 
         trigger = <&wakeup_key>;
         wakeup-source;
+		extra-gpios 
+			= <&gpio0 13 GPIO_ACTIVE_HIGH>
+			;
     };
 
 	soft_off_wakers {
@@ -136,6 +139,11 @@
 
 &usbd {
     status = "okay";
+/*	
+ *	cdc_acm_uart: cdc_acm_uart {
+ *   	compatible = "zephyr,cdc-acm-uart";
+ *  };
+ */
 };
 
 &pinctrl {
